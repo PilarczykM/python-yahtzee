@@ -7,8 +7,8 @@ class SameValueRule(Rule):
         self.__value = value
         self.__name = name
 
-    def name(self) -> str:
+    def name(self):
         return self.__name
 
-    def points(self, hand: Hand) -> int:
+    def points(self, hand: Hand):
         return hand.count(self.__value) * self.__value

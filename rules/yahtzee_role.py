@@ -5,6 +5,7 @@ from rules.straight import Straight
 
 
 class Aces(SameValueRule):
+
     def __init__(self):
         super().__init__(1, "Aces")
 
@@ -82,10 +83,10 @@ class SmallStraight(Straight):
         return "Small straight"
 
     def points(self, hand: Hand):
-        list_of_hand = sorted(hand.get_hand())
-        if len(list_of_hand) == 4 and self.is_straight(list_of_hand):
+        l = sorted(hand.get_hand())
+        if len(l) == 4 and self.is_straight(l):
             return 30
-        elif len(list_of_hand) == 5 and (self.is_straight(list_of_hand[1:]) or self.is_straight(list_of_hand[:-1])):
+        elif len(l) == 5 and (self.is_straight(l[1:]) or self.is_straight(l[:-1])):
             return 30
         else:
             return 0
