@@ -1,5 +1,4 @@
-from hand import Hand
-from rules import *
+from rules.rule import *
 
 
 def test_aces():
