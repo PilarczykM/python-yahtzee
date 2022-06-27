@@ -6,14 +6,14 @@ class Hand:
         self.dice = dice
         self.hand = []
         for _ in range(dice):
-            self.hand.append(Die(sides))
+            self.hand.append(Die(None, sides))
 
-    def all_dices(self):
+    def all_dice(self):
         return range(1, self.dice + 1)
 
     def roll(self, dice):
-        if [x for x in dice if x > self.dice or x < 1]:
-            raise IndexError(f"You only have {self.dice} dice.")
+        if [x for x in dice if x > self.dice]:
+            raise IndexError(f"You only have {self.dice} dice!")
         for i in dice:
             self.hand[i - 1].roll()
 
