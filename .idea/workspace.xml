@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="faa2b35e-17b7-4572-a78b-f343b6a1e150" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/yahtzee.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/die.py" beforeDir="false" afterPath="$PROJECT_DIR$/die.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hand.py" beforeDir="false" afterPath="$PROJECT_DIR$/hand.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
