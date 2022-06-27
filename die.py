@@ -1,7 +1,7 @@
 import random
 
 
-class Die(object):
+class Die():
     def __init__(self, sides=6, face: int = None):
         self.sides = sides
         if face is not None:
